@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+  box-sizing: border-box;
+  -webkit-appearance: none !important;
+}
+
+body, html {
+    background : #151515;
+    color : white;
+}
+input {
+    color: white !important;
+}
+input:-webkit-autofill {
+    background: transparent !important;
+    color: white !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

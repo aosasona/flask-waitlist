@@ -1,0 +1,14 @@
+{
+  "name": "flask-contact",
+  "version": "1.0.0",
+  "description": "A simple flask and tailwind waitlist",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx tailwind -i ./static/css/styles.css -o ./static/css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
