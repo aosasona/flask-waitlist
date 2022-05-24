@@ -28,7 +28,6 @@ Find all users on the list
 
 def show():
     fetch_all = col.find()
-
     if fetch_all is not None:
         return fetch_all
     else:

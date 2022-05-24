@@ -533,12 +533,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.mt-\[2vh\]{
+  margin-top: 2vh;
+}
+
+.mt-\[4vh\]{
+  margin-top: 4vh;
+}
+
+.mt-\[1vh\]{
+  margin-top: 1vh;
+}
+
+.mt-\[1\.5vh\]{
+  margin-top: 1.5vh;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .h-min{
@@ -575,6 +603,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: min-content;
 }
 
+.max-w-\[90vw\]{
+  max-width: 90vw;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col-reverse{
   flex-direction: column-reverse;
 }
@@ -591,6 +627,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-evenly;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-x-2{
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -598,6 +642,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .whitespace-nowrap{
   white-space: nowrap;
+}
+
+.whitespace-pre{
+  white-space: pre;
 }
 
 .rounded-\[4rem\]{
@@ -630,6 +678,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-green-600{
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
 .object-contain{
@@ -691,6 +744,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[5rem\]{
+  font-size: 5rem;
+}
+
+.text-\[4rem\]{
+  font-size: 4rem;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -729,6 +800,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-xl{
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md{
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -743,6 +824,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-green-600:hover{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{
@@ -764,6 +855,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-\[6vh\]{
+    margin-top: 6vh;
+  }
+
   .lg\:w-4\/6{
     width: 66.666667%;
   }
@@ -776,12 +871,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 40vw;
   }
 
+  .lg\:max-w-\[40vw\]{
+    max-width: 40vw;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-col{
     flex-direction: column;
   }
 
   .lg\:gap-3{
     gap: 0.75rem;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
   }
 
   .lg\:text-\[10rem\]{
@@ -796,5 +907,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[7rem\]{
+    font-size: 7rem;
+  }
+
+  .lg\:text-\[6rem\]{
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

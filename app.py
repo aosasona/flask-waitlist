@@ -7,17 +7,20 @@ app = Flask(__name__)
 
 # Index route
 @app.route("/")
-@app.route("/index", methods=["POST", "GET"])
+@app.route("/index")
 def index():
-    if request.method == "GET":
-        return render_template("index.html")
+    return render_template("index.html")
+
+
+# Submit Email
+@app.route("/submit", methods=["POST"])
+def submit():
+    email = request.form["email"]
+    join_list = insert(email)
+    if join_list:
+        return render_template("index.html", success=True)
     else:
-        email = request.form["email"]
-        join_list = insert(email)
-        if join_list:
-            return render_template("index.html", success=True)
-        else:
-            return render_template("index.html", error=True)
+        return render_template("index.html", error=True)
 
 
 # Show All E-mails
