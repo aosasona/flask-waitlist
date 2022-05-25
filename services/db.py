@@ -1,5 +1,8 @@
 from pymongo import MongoClient
 from os import environ
+from dotenv import load_dotenv
+
+load_dotenv('.env')
 
 
 # Mongo URI

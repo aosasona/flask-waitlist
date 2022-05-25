@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from services.db import insert, show, find_email
+from dotenv import load_dotenv
 
+load_dotenv('.env')
 
 # Flask initialisation
 app = Flask(__name__)
